@@ -595,8 +595,8 @@
       }
     },
     "test/StakeContract.t.sol": {
-      "lastModificationDate": 1663864039991,
-      "contentHash": "78408912919a4be9598fbd3b40706549",
+      "lastModificationDate": 1663864629500,
+      "contentHash": "fcc0bf01bef5969f81df1ddf2060eacf",
       "sourceName": "test/StakeContract.t.sol",
       "solcConfig": {
         "settings": {

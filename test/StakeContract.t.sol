@@ -6,9 +6,18 @@ import "src/StakeContract.sol";
 import "./mocks/MockERC20.sol";
 
 contract StakeContractTest is DSTest {
-    function setup() public {}
+    StakeContract public stakeContract;
+    MockERC20 public mockToken;
 
-    function testExaple() public {
-        assertTrue(true);
+    function setUp() public {
+        stakeContract = new StakeContract();
+        mockToken = new MockERC20();
+    }
+
+    function testExample() public {
+        uint256 amount = 10e18;
+        mockToken.approve(address(stakeContract), amount);
+        bool stakePassed = stakeContract.stake(amount, address(mockToken));
+        assertTrue(stakePassed);
     }
 }
