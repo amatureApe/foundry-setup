@@ -595,8 +595,8 @@
       }
     },
     "test/StakeContract.t.sol": {
-      "lastModificationDate": 1663864629500,
-      "contentHash": "fcc0bf01bef5969f81df1ddf2060eacf",
+      "lastModificationDate": 1663865102519,
+      "contentHash": "3deb02b89754caede428eff8a361cc99",
       "sourceName": "test/StakeContract.t.sol",
       "solcConfig": {
         "settings": {
@@ -638,7 +638,8 @@
         "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
         "lib/openzeppelin-contracts/contracts/utils/Context.sol",
         "src/StakeContract.sol",
-        "test/mocks/MockERC20.sol"
+        "test/mocks/MockERC20.sol",
+        "test/utils/Cheats.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
@@ -688,6 +689,45 @@
       "artifacts": {
         "MockERC20": {
           "0.8.13+commit.abaa5c0e.Darwin.appleclang": "MockERC20.sol/MockERC20.json"
+        }
+      }
+    },
+    "test/utils/Cheats.sol": {
+      "lastModificationDate": 1663865049766,
+      "contentHash": "ca5b7a0e24ca08f073e3d69134b5dd4f",
+      "sourceName": "test/utils/Cheats.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Cheats": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Cheats.sol/Cheats.json"
         }
       }
     }
